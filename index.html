@@ -16,6 +16,10 @@
 </head>
 
 <body ng-controller="MainCtrl">
- {{testing}}
+ <ul>
+  <li ng-repeat="session in sessions">
+    {{session}}
+  </li>
+</ul>
 </body>
 </html>
