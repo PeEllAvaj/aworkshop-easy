@@ -18,7 +18,7 @@
 <body ng-controller="MainCtrl">
  <ul>
   <li ng-repeat="session in sessions">
-    {{session}}
+    {{session.title}} by {{session.speaker_first}} {{session.speaker_last}} in the {{session.location}}.
   </li>
 </ul>
 </body>
