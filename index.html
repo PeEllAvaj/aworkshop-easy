@@ -16,8 +16,9 @@
 </head>
 
 <body ng-controller="MainCtrl">
+  <div>Search:<input ng-model="query"></div>
  <ul>
-  <li ng-repeat="session in sessions">
+  <li ng-repeat="session in sessions | filter:query">
     {{session.title}} by {{session.speaker_first}} {{session.speaker_last}} in the {{session.location}}.
   </li>
 </ul>
